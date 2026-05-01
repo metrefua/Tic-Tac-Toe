@@ -56,6 +56,7 @@ function setGameMode(singlePlayerMode) {
     playerTwoGroup.style.display = "block";
     playerTwoName.textContent = "P2";
   }
+  resetEverything();
 }
 
 // Start Game
@@ -125,7 +126,7 @@ function checkDraw() {
   return board.every((cell) => cell !== "");
 }
 
-// Computer Logic (Smart Basic)
+// Computer Logic
 function computerMove() {
   let move = findBestMove("O") || findBestMove("X") || getBestAvailableMove();
 
@@ -167,6 +168,7 @@ function getBestAvailableMove() {
 // Helpers
 function getPlayerName(player) {
   return player === "X" ? playerOneName.textContent : playerTwoName.textContent;
+  gameActive = true;
 }
 
 function updateScoreBoard() {
@@ -203,7 +205,10 @@ function showPopup(message) {
 
 // Event Listeners
 multiplayerBtn.addEventListener("click", () => setGameMode(false));
-singleplayerBtn.addEventListener("click", () => setGameMode(true));
+singleplayerBtn.addEventListener("click", () => {
+  setGameMode(true);
+  gameActive = true;
+});
 startGameBtn.addEventListener("click", startGame);
 restartBtn.addEventListener("click", () => {
   resetBoard();
@@ -217,6 +222,7 @@ cells.forEach((cell) => {
 newGameBtn.addEventListener("click", () => {
   popup.style.display = "none";
   resetBoard();
+  gameActive = true;
 });
 
 
