@@ -194,7 +194,6 @@ function resetEverything() {
 
   updateScoreBoard();
   resetBoard();
-  gameActive = true;
 }
 
 function showPopup(message) {
@@ -208,7 +207,6 @@ singleplayerBtn.addEventListener("click", () => setGameMode(true));
 startGameBtn.addEventListener("click", startGame);
 restartBtn.addEventListener("click", () => {
   resetBoard();
-  gameActive = true;
 });
 resetBtn.addEventListener("click", resetEverything);
 
@@ -219,10 +217,9 @@ cells.forEach((cell) => {
 newGameBtn.addEventListener("click", () => {
   popup.style.display = "none";
   resetBoard();
-  gameActive = true;
 });
 
 
 // Default Mode
-setGameMode(true);
+setGameMode(false);
 updateScoreBoard();
