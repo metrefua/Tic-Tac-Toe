@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-wrapper">
+
+    <section class="title-section">
+      <h1>TIC TAC TOE</h1>
+    </section>
+
+    <section class="mode-section">
+      <button id="singleplayer-btn" class="mode-btn">Single Player</button>
+      <button id="multiplayer-btn" class="mode-btn active">Two Player</button>
+    </section>
+
+    <section class="player-setup">
+      <div class="input-box">
+        <label for="player-one">Player 1 (X)</label>
+        <input type="text" id="player-one" placeholder="Enter Player 1 Name" />
+      </div>
+
+      <div class="input-box" id="player-two-group">
+        <label for="player-two">Player 2 (O)</label>
+        <input type="text" id="player-two" placeholder="Enter Player 2 Name" />
+      </div>
+
+      <button id="start-game-btn" class="start-btn">Start Game</button>
+    </section>
+
+    <section class="status-section">
+      <p id="game-status">Player X's Turn</p>
+    </section>
+
+    <section class="board-section">
+      <div class="game-board" id="game-board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+      </div>
+    </section>
+
+    <section class="score-section">
+      <div class="score-card">
+        <h3 id="player-one-name">P1</h3>
+        <p id="score-x">0</p>
+      </div>
+
+      <div class="score-card">
+        <h3>Draw</h3>
+        <p id="draw-score">0</p>
+      </div>
+
+      <div class="score-card">
+        <h3 id="player-two-name">P2</h3>
+        <p id="score-o">0</p>
+      </div>
+    </section>
+
+    <section class="control-section">
+      <button id="restart-btn" class="control-btn">Restart</button>
+      <button id="reset-btn" class="control-btn">Reset</button>
+    </section>
+
+  </main>
+  <div class="popup" id="winner-popup">
+    <div class="popup-content">
+      <h2 id="popup-message">Winner!</h2>
+      <button id="new-game-btn">New Game</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
