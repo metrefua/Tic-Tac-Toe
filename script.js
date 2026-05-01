@@ -35,7 +35,6 @@ const resetBtn = document.getElementById("reset-btn");
 const popup = document.getElementById("winner-popup");
 const popupMessage = document.getElementById("popup-message");
 const newGameBtn = document.getElementById("new-game-btn");
-
 const scoreX = document.getElementById("score-x");
 const scoreO = document.getElementById("score-o");
 const drawScore = document.getElementById("draw-score");
@@ -52,6 +51,7 @@ function setGameMode(singlePlayerMode) {
   if (singlePlayerMode) {
     playerTwoGroup.style.display = "none";
     playerTwoName.textContent = "Computer";
+
   } else {
     playerTwoGroup.style.display = "block";
     playerTwoName.textContent = "P2";
