@@ -1,4 +1,4 @@
-# Tic-Tac-Toe
+### Tic-Tac-Toe
 
 ## Project Overview
 
@@ -8,16 +8,16 @@ The goal of the project is to create a responsive and user-friendly game experie
 
 The application includes player setup, score tracking, restart and reset controls, and smart computer gameplay.
 
----
+-
 
 ## Features
 
-### Game Modes
+# Game Modes
 
 * Single Player mode (Player vs Computer)
 * Two Player mode (Player vs Player)
 
-### Gameplay Features
+# Gameplay Features
 
 * Smart computer move logic
 * Winner detection
@@ -44,17 +44,7 @@ The application includes player setup, score tracking, restart and reset control
 * Interactive buttons and hover effects
 * Player name input fields
 
----
-
-## Technologies Used
-
-* HTML5
-* CSS3
-* JavaScript (Vanilla JS)
-
-No external libraries or frameworks were used.
-
----
+-
 
 ## Project Structure
 
@@ -62,7 +52,7 @@ No external libraries or frameworks were used.
 * `style.css` → Styling and responsive layout
 * `script.js` → Game logic and interactions
 
----
+-
 
 ## How the Game Works
 
